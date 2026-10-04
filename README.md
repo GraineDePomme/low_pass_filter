@@ -6,16 +6,16 @@ This project simulates the effect of a low-pass filter represented by the follow
 
 Ohm's law gives us
 
-\[ V_{in} - V_{out} = RI \]
+$$ V_{in} - V_{out} = RI $$
 
 and the capacitor law gives us
 
-\[ Q = CV_{out} \]
-\[ I = \frac{dQ}{dt} \]
+$$ Q = CV_{out} $$
+$$ I = \frac{dQ}{dt} $$
 
 By substituting the second equation into the third then into the first equation we get
 
-\[ \frac{dV_{out}}{dt} = \frac{1}{RC} (V_{in} - V_{out}) \]
+$$ \frac{dV_{out}}{dt} = \frac{1}{RC} (V_{in} - V_{out}) $$
 
 This gives us a first-order one-variable ordinary different equation that can be solved numerically.
 
@@ -51,13 +51,13 @@ data.csv
 
 Here we present the result of the simulation when applied to a square-wave signal with frequency 440 Hz and amplitude 1:
 
-\[ V_{in}(t) = 
+$$ V_{in}(t) = 
 
 \begin{cases}
       1 & \text{if $\lfloor 2t \rfloor$ is even}\\
       -1 & \text{if $\lfloor 2t \rfloor$ is odd}
     \end{cases} 
- \]
+ $$
 
 ![](/animation.gif)
 
