@@ -51,13 +51,13 @@ data.csv
 
 Here we present the result of the simulation when applied to a square-wave signal with frequency 440 Hz and amplitude 1:
 
-$$ V_{in}(t) = 
-
+$$
+V_{in}(t) =
 \begin{cases}
-      1 & \text{if $\lfloor 2t \rfloor$ is even}\\
-      -1 & \text{if $\lfloor 2t \rfloor$ is odd}
-    \end{cases} 
- $$
+1 & \text{if } \lfloor 2t \rfloor \text{ is even} \\
+-1 & \text{if } \lfloor 2t \rfloor \text{ is odd}
+\end{cases}
+$$
 
 ![](/animation.gif)
 

@@ -38,5 +38,6 @@ for png_file in sorted(output_dir.glob("*.png")):
 imageio.mimsave(
     "animation.gif",
     images,
-    duration=0.1  # seconds per frame
+    duration=0.1,
+    loop=0
 )
